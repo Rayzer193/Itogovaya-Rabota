@@ -5,6 +5,17 @@
 System.Console.Write("Сколько слов вы будете вводить?(число от 1 до 100):");
 int dlin = Convert.ToInt32(Console.ReadLine());
 
+int[] CreateArray(int Length = 100)
+{
+    int[] tempArray = new int[Length];
+    for (int i = 0; i < dlin; i++)
+    {
+        System.Console.Write($"Введите {i+1} число: ");
+        tempArray[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    return tempArray;
+}
+
 void printArray(string[] array)
 {
 	{
